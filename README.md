@@ -544,11 +544,11 @@ const POPUP = {
 
 ## 安装 / 卸载
 
-从仓库安装（仓库名建议用 `dsh-cn`，包名仍是 `dsh-cn-nav`）：
+从仓库安装（仓库名与包名同为 `dsh-cn-nav`）：
 
 ```
 plugin_manager action=install_bundle target=<本目录绝对路径>
-plugin_manager action=install_bundle target=git+https://github.com/<你的账号>/dsh-cn
+plugin_manager action=install_bundle target=git+https://github.com/<你的账号>/dsh-cn-nav
 plugin_manager action=remove_bundle target=dsh-cn-nav
 ```
 
