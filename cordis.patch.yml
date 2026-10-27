@@ -1,0 +1,8 @@
+# dsh-cn-nav — bundle patch
+#
+# 只把 Host 半侧挂进当前 profile；Web 半侧由 package.json 的 dsh.client 声明，
+# 宿主按声明自动组装，不需要在这里写。Host 半侧是一个空壳（apply 为空），
+# 所有界面都在 client.js 里通过 slot 注册。
+- insert:
+    - id: dsh-cn-nav
+      name: dsh-cn-nav

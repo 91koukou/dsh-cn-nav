@@ -1,0 +1,44 @@
+{
+  "name": "dsh-cn-nav",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ds概念版：底部导航（首页 / AI助手 / 短视频 / 个人）、官方公告、个人中心、会员体系与开屏/弹窗/横幅广告。纯前端演示插件。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "navbar",
+    "splash",
+    "vip",
+    "theme"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
